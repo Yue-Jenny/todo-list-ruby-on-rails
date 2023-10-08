@@ -29,3 +29,6 @@
 
 # Ignore bundler config
 /.bundle
+
+# Ignore other unnecessary files
+.DS_Store
