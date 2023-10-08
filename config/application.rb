@@ -16,7 +16,9 @@ module TodoRor
     # These settings can be overridden in specific environments using the files
     # in config/environments, which are processed later.
     #
-    # config.time_zone = "Central Time (US & Canada)"
+    # 設定應用程式的基礎參考時區，注意不是資料庫。
+    # see: https://api.rubyonrails.org/classes/ActiveSupport/TimeZone.html
+    config.time_zone = "Taipei"
     # config.eager_load_paths << Rails.root.join("extras")
   end
 end
