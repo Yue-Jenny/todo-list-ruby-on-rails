@@ -1,0 +1,31 @@
+# Ignore git and other VCS files
+.git
+.gitignore
+
+# Environment files
+.env
+.env.*
+
+# Ignore master key for decrypting credentials and more.
+/config/master.key
+
+# Ignore database files
+/db/*.sqlite3
+
+# Ignore precompiled assets
+/public/assets
+
+# Ignore logs
+/log/*
+!/log/.keep
+
+# Ignore temp files
+/tmp/*
+!/tmp/.keep
+
+# Ignore storage files
+/storage/*
+!/storage/.keep
+
+# Ignore bundler config
+/.bundle
