@@ -34,7 +34,12 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
+# Ignore other unnecessary files
+.DS_Store
+
+# Environment files
 .env
 .env.*
 
+# Ignore docker-compose files to prevent local or sensitive configurations from being committed
 docker-compose.yml
