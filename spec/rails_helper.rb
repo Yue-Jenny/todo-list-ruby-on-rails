@@ -38,6 +38,7 @@ RSpec.configure do |config|
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
   # examples within a transaction, remove the following line or assign false
   # instead of true.
+  # See https://rspec.info/features/6-0/rspec-rails/Transactions/
   config.use_transactional_fixtures = true
 
   # You can uncomment this line to turn off ActiveRecord support entirely.
@@ -62,4 +63,7 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
+
+  # See: https://thoughtbot.github.io/factory_bot/setup/summary.html#configure-your-test-suite
+  config.include FactoryBot::Syntax::Methods
 end
