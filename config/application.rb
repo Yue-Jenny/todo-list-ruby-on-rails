@@ -1,6 +1,6 @@
-require_relative "boot"
+require_relative 'boot'
 
-require "rails/all"
+require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -18,7 +18,7 @@ module TodoRor
     #
     # 設定應用程式的基礎參考時區，注意不是資料庫。
     # see: https://api.rubyonrails.org/classes/ActiveSupport/TimeZone.html
-    config.time_zone = "Taipei"
+    config.time_zone = 'Taipei'
     # config.eager_load_paths << Rails.root.join("extras")
   end
 end
