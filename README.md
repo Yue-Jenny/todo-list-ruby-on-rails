@@ -22,3 +22,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+## Ruby Style Guide
+為了保持程式碼風格一致，此專案參考 Ruby 社群維護的[Ruby Style Guide](https://github.com/rubocop/ruby-style-guide)進行程式風格管理。
