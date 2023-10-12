@@ -2,8 +2,8 @@
 
 require 'rails_helper'
 
-RSpec.describe "Api::V1::Todos", type: :request do
-  describe "GET /index" do
+RSpec.describe 'Api::V1::Todos', type: :request do
+  describe 'GET /index' do
     # let! : 表示在每個 it 區塊開始之前都先執行此塊的內容。See: https://rspec.info/features/3-12/rspec-core/helper-methods/let/
     # 關於 create_list。See: https://thoughtbot.github.io/factory_bot/building-or-creating-multiple-records/summary.html
     let!(:todos) { create_list(:todo, 3) }
@@ -20,7 +20,7 @@ RSpec.describe "Api::V1::Todos", type: :request do
     end
   end
 
-  describe "POST /create" do
+  describe 'POST /create' do
     let(:valid_attributes) { { todo: { title: 'Learn RSpec' } } }
 
     context 'when the request is valid' do
