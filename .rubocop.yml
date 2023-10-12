@@ -1,2 +1,42 @@
+inherit_from: .rubocop_todo.yml
+
+# RuboCop has a predefined list of inclusion and exclusion rules.
+# See https://github.com/rubocop/rubocop/blob/v1.56.4/config/default.yml
+
 AllCops:
+  TargetRubyVersion: 3.2.2
+  NewCops: disable
   SuggestExtensions: false
+  Exclude:
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'bin/*'
+    - 'storage/**/*'
+    - 'log/**/*'
+
+# See https://docs.rubocop.org/rubocop/cops_style.html#styledocumentation
+Style/Documentation:
+  Enabled: false
+
+# See https://docs.rubocop.org/rubocop/cops_style.html#stylefrozenstringliteralcomment
+# See https://stackoverflow.com/questions/68746900/frozen-string-literal-true-is-really-needed-in-a-rails-application-do-i
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+# See https://docs.rubocop.org/rubocop/cops_style.html#styleclassandmodulechildren
+Style/ClassAndModuleChildren:
+  Exclude:
+    - test/channels/application_cable/connection_test.rb
+    - test/test_helper.rb
+
+# See https://docs.rubocop.org/rubocop/cops_metrics.html#metricsblocklength
+Metrics/BlockLength:
+  Max: 40
+  Exclude:
+    - 'spec/**/*'
+
+# See https://docs.rubocop.org/rubocop/cops_lint.html#lintmissingsuper
+Lint/MissingSuper:
+  Enabled: true
+  AllowedParentClasses:
+    - 'ApplicationService'
