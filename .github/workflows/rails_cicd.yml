@@ -45,7 +45,7 @@ jobs:
         TEST_DATABASE_HOST: localhost
         TEST_DATABASE_PORT: 5432
       run: |
-        rails db:setup
+        bundle exec rails db:setup
 
     - name: Run Tests
       env:
