@@ -13,6 +13,7 @@ AllCops:
     - 'bin/*'
     - 'storage/**/*'
     - 'log/**/*'
+    - 'vendor/**/*'
 
 # See https://docs.rubocop.org/rubocop/cops_style.html#styledocumentation
 Style/Documentation:
