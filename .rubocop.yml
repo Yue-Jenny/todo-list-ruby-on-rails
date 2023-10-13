@@ -3,6 +3,7 @@ inherit_from: .rubocop_todo.yml
 # RuboCop has a predefined list of inclusion and exclusion rules.
 # See https://github.com/rubocop/rubocop/blob/v1.56.4/config/default.yml
 
+# RuboCop pulls in .rubocop.yml files from vendor directories. See https://github.com/rubocop/rubocop/issues/9832
 AllCops:
   TargetRubyVersion: 3.2.2
   NewCops: disable
